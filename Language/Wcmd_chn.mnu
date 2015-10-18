@@ -1,0 +1,743 @@
+POPUP "文件(&F)"
+    MENUITEM "查看文件内容(&V)...\tF3", 903
+    MENUITEM "编辑文件(&E)...\tF4", 904
+    MENUITEM "文件属性(&R)...\tAlt + 回车", 510
+    MENUITEM "更改属性(&C)...\tAlt + C [s]", 502
+    MENUITEM "文件关联(&A)...", 507
+    MENUITEM "内部关联(仅用于 Total Commander)(&L)...", 519
+    MENUITEM "计算占用空间(&O)...\tCtrl + L", 503
+    MENUITEM "编辑文件注释(&N)...\tCtrl + Z", 2700
+    MENUITEM SEPARATOR
+    MENUITEM "搜索文件(&F)...\tAlt + F7 或 Ctrl + F [*]", 501
+    MENUITEM "比较文件内容(&Y)...\tF10", 2022
+    MENUITEM "批量重命名(&M)...\tCtrl + M", 2400
+    MENUITEM "同步文件夹(&S)...\tShift + F12", 2020
+    MENUITEM SEPARATOR
+    MENUITEM "压缩文件(&K)...\tAlt + F5", 508
+    MENUITEM "解压文件(&U)...\tAlt + F9", 509
+    MENUITEM "测试压缩包(&I)\tAlt + F6", 518
+    MENUITEM "分割文件(&T)...", 560
+    MENUITEM "合并文件(&B)...", 561
+    MENUITEM "文件编码 (MIME,UUE,XXE 格式)(&G)...", 562
+    MENUITEM "文件解码 (MIME,UUE,XXE,BinHex 格式)(&D)...", 563
+    MENUITEM "创建 CRC 校验和文件 (SFV/MD5/SHA) 格式(&H)...\tCtrl + 5", 564
+    MENUITEM "验证 CRC 校验和文件(根据校验文件)(&W)", 565
+    MENUITEM SEPARATOR
+    POPUP "其他操作(&X)"
+        MENUITEM "快速查看\tCtrl + Q", 304
+        MENUITEM "查看文件 (不用插件)\tAlt + Shift + F3", 1006
+        MENUITEM "复制...\tF5", 905
+        MENUITEM "另存为...\tShift + F5", 3100
+        MENUITEM "移动或重命名...\tF6", 906
+        MENUITEM "仅重命名 (不移动)\tF2 [*] 或 Shift + F6", 1002
+        MENUITEM "重命名 (仅光标下文件)", 1007
+        MENUITEM "新建文件夹\tF7", 907
+        MENUITEM "删除\tDel", 908
+        MENUITEM "创建快捷方式...\tCtrl + I [*]", 1004
+        MENUITEM SEPARATOR
+        MENUITEM "计算所有文件夹占用空间\tShift + Alt + Enter", 2014
+        MENUITEM "比较文件内容 (内部)", 2040
+        MENUITEM "快速定位文件(夹)\tCtrl + S", 2915
+    END_POPUP
+    POPUP "打印(&P)"
+        MENUITEM "打印文件夹(&L)...", 2027
+        MENUITEM "打印文件列表(含子文件夹)(&S)...", 2028
+        MENUITEM "打印文件内容(&T)\tCtrl + F9", 504
+    END_POPUP
+    MENUITEM SEPARATOR
+    MENUITEM "退出(&Q)\tAlt + F4", 24340
+END_POPUP
+
+POPUP "编辑(&E)"
+    MENUITEM "编辑文件(&E)\tF4", 904
+    MENUITEM "编辑文件注释(&C)...\tCtrl + Z", 2700
+    MENUITEM "编辑设置文件(&D)", 581
+    MENUITEM SEPARATOR
+    MENUITEM "编辑来源路径(&S)", 2912
+    MENUITEM "复制目标路径(&T)", 2030
+    MENUITEM "复制来源路径(&P)\tCtrl + 1", 2029
+    MENUITEM "复制文件名(&N)\tCtrl + 2 或 F9", 2017
+    MENUITEM "复制文件名 (含完整路径)(&F)\tCtrl + 3 或 F12", 2018
+    MENUITEM "复制文件名 (含网络路径)(&K)\tCtrl + 4", 2021
+    MENUITEM "复制文件名 (含完整路径及所有显示的列)(&O)\tCtrl + 6", 2037
+    MENUITEM "复制文件名 (含网络路径及所有显示的列)(&Y)\tCtrl + 8", 2038
+    MENUITEM SEPARATOR
+    MENUITEM "复制文件名 (含所有显示的列)(&H)\tCtrl + E", 2036
+    MENUITEM "导出文件名 (含所有显示的列)(&X)...", 2039
+    MENUITEM "导出文件名 (含所有显示的列)(ANSI)(&A)...", 2043
+    MENUITEM "导出文件名 (含所有显示的列)(Unicode)(&U)...", 2044
+    MENUITEM SEPARATOR
+    MENUITEM "复制\tCtrl + C", 2008
+    MENUITEM "剪切\tCtrl + X", 2007
+    MENUITEM "粘贴\tCtrl + V", 2009
+END_POPUP
+
+POPUP "视图(&V)"
+    MENUITEM "列表(&B)\tCtrl + F1", 301
+    MENUITEM "详细资料(&F)\tCtrl + F2", 302
+    MENUITEM "文件注释(&M)\tAlt + 9", 300
+    MENUITEM "自定义列(&D)\tShift + F1", 270
+    MENUITEM "文件夹树(&T)\tCtrl + F8", 303
+    POPUP "独立文件夹树(&W)\tCtrl + Shift + F8"
+        MENUITEM "关闭(&0)", 3200
+        MENUITEM "一个(两边窗口共用一个)(&1)", 3201
+        MENUITEM "两个(两边窗口各有一个)(&2)", 3202
+    END_POPUP
+    MENUITEM "缩略图(&L)\tAlt + 4", 269
+    MENUITEM "快速查看(&Q)\tCtrl + Q", 304
+    MENUITEM "纵向排列窗口(&V)", 305
+    MENUITEM SEPARATOR
+    MENUITEM "按文件名排序(&N)\tCtrl + F3", 321
+    MENUITEM "按扩展名排序(&X)\tCtrl + F4", 322
+    MENUITEM "按日期时间排序(&I)\tCtrl + F5", 324
+    MENUITEM "按大小排序(&S)\tCtrl+F6", 323
+    MENUITEM "不排序(&O)\tCtrl + F7", 325
+    MENUITEM "反向排序(&E)\tShift + F7", 330
+    POPUP "按列排序"
+        MENUITEM "按第 1 列排序", 6001
+        MENUITEM "按第 2 列排序", 6002
+        MENUITEM "按第 3 列排序", 6003
+        MENUITEM "按第 4 列排序", 6004
+        MENUITEM "按第 5 列排序", 6005
+    END_POPUP
+    MENUITEM SEPARATOR
+    MENUITEM "所有文件(&A)\tCtrl + F10", 312
+    MENUITEM "可执行文件(&P)\tCtrl + F11", 311
+    MENUITEM "自定义类型(&C)...\tCtrl + F12", 314
+    MENUITEM "上次选择文件", 313
+    MENUITEM "仅显示选中文件(&Y)\tShift + - [+]", 2023
+    MENUITEM SEPARATOR
+    POPUP "屏幕布局和界面风格(&G)"
+        MENUITEM "显示/隐藏  工具栏\tAlt + 0", 2901
+        MENUITEM "显示/隐藏  驱动器按钮栏", 2902
+        MENUITEM "显示/隐藏  两个驱动器按钮栏", 2903
+        MENUITEM "显示/隐藏  驱动器下拉框", 2906
+        MENUITEM SEPARATOR
+        MENUITEM "显示/隐藏  当前文件夹栏", 2907
+        MENUITEM "显示/隐藏  排序控制行", 2908
+        MENUITEM "显示/隐藏  状态栏", 2909
+        MENUITEM "显示/隐藏  命令行", 2910
+        MENUITEM "显示/隐藏  功能键按钮\tAlt + 3", 2911
+        MENUITEM "显示/隐藏  文件夹标签\tAlt + ↑", 2916
+        MENUITEM "显示/隐藏  历史/常用文件夹按钮", 2919
+        MENUITEM SEPARATOR
+        MENUITEM "显示/隐藏  覆盖图标 (小箭头等)", 2917
+        MENUITEM "显示/隐藏  XP 主题背景", 2923
+        MENUITEM "平坦/正常  按钮模式", 2904
+        MENUITEM "平坦/正常  界面模式", 2905
+    END_POPUP
+    POPUP "其他显示开关(&K)"
+        MENUITEM "启用/禁用  文件夹按名称排序", 2012
+        MENUITEM "启用/禁用  8.3 格式小写文件名", 2013
+        MENUITEM "显示/隐藏  快速搜索框", 2915
+        MENUITEM "显示/隐藏  自定义隐藏文件", 2922
+        MENUITEM "启用/禁用  文件夹自动刷新", 2921
+        MENUITEM "显示/隐藏  独立文件夹树窗口", 3203
+        MENUITEM "显示/隐藏  单个独立文件夹树窗口", 3204
+        MENUITEM "显示/隐藏  两个独立文件夹树窗口", 3205
+    END_POPUP
+END_POPUP
+
+POPUP "导航(&D)"
+    MENUITEM "快速定位文件(夹)(&Q)\tCtrl + S", 2915
+    MENUITEM SEPARATOR
+    MENUITEM "文件夹树(&T)...\tAlt + F10", 500
+    MENUITEM "常用文件夹列表(&D)\tCtrl + D", 526
+    MENUITEM "历史文件夹列表(&H)\tAlt + Down", 572
+    MENUITEM SEPARATOR
+    MENUITEM "后退(&B)\tAlt + Left", 570
+    MENUITEM "前进(&F)\tAlt + Right", 571
+    MENUITEM "后退(忽略FTP目录)(&I)", 573
+    MENUITEM "前进(忽略FTP目录)(&O)", 574
+    MENUITEM "根目录(&Y)\tCtrl + \", 2001
+    MENUITEM "上级文件夹(&U)\tBack Space", 2002
+    MENUITEM SEPARATOR
+    MENUITEM "更改左窗口的驱动器(&L)\tAlt + F1", 131
+    MENUITEM "更改右窗口的驱动器(&R)\tAlt + F2", 231
+    POPUP "转到指定驱动器(&G)"
+        MENUITEM "上一驱动器(&V)\tShift + Left", 2052
+        MENUITEM "下一驱动器(&X)\tShift + Right", 2051
+        MENUITEM "转到驱动器A:", 2061
+        MENUITEM "转到驱动器C:", 2063
+        MENUITEM "转到驱动器D:", 2064
+        MENUITEM "转到驱动器E:", 2065
+        MENUITEM "转到驱动器F:", 2066
+        MENUITEM "转到驱动器G:", 2067
+        MENUITEM "转到驱动器H:", 2068
+        MENUITEM "转到驱动器Z:", 2086
+    END_POPUP
+    MENUITEM SEPARATOR
+    MENUITEM "编辑当前路径(&C)", 2912
+    MENUITEM "交换左右窗口(&<)\tCtrl + U", 531
+    MENUITEM "交换左右窗口及标签(&>)\tCtrl + Shift + U", 535
+    MENUITEM "目标 ＝ 来源(&=)", 532
+    MENUITEM SEPARATOR
+    MENUITEM "在左窗口打开文件夹(&W)\tCtrl + Left", 2024
+    MENUITEM "在右窗口打开文件夹(&E)\tCtrl + Right", 2025
+    MENUITEM "打开文件夹或压缩文件(&P)\tCtrl + PgDn", 2003
+    MENUITEM SEPARATOR
+    POPUP "转到指定位置(&S)"
+        MENUITEM "桌面\tCtrl + Y [+]", 2121
+        MENUITEM "我的电脑", 2122
+        MENUITEM "网上邻居\tCtrl + J [+]", 2125
+        MENUITEM "控制面板", 2123
+        MENUITEM "字体", 2124
+        MENUITEM "回收站", 2127
+        MENUITEM "打印机", 2126
+    END_POPUP
+    POPUP "聚焦于指定区域(&A)"
+        MENUITEM "聚焦于来源路径", 332
+        MENUITEM "聚焦于左窗口", 4001
+        MENUITEM "聚焦于右窗口", 4002
+        MENUITEM "聚焦于命令行", 4003
+        MENUITEM "聚焦于工具栏", 4004
+    END_POPUP
+END_POPUP
+
+POPUP "标签(&T)"
+    MENUITEM "新建标签(&T)\tCtrl + T", 3001
+    MENUITEM "新建标签(在后台)(&B)\tShift + Ctrl + T", 3002
+    MENUITEM SEPARATOR
+    MENUITEM "将光标所在文件夹建为标签(&C)\tCtrl + ↑", 3003
+    MENUITEM "将光标所在文件夹建为对面窗口标签(&F)\tCtrl + ↓", 3004
+    MENUITEM SEPARATOR
+    MENUITEM "锁定/解锁当前标签(&L)\tCtrl + *", 3010
+    MENUITEM "锁定/解锁当前标签 (不锁定文件夹)(&K)\tCtrl + K", 3012
+    MENUITEM SEPARATOR
+    MENUITEM "关闭当前标签(&W)\tCtrl + W", 3007
+    MENUITEM "关闭所有标签 (非活动和未锁定的)(&O)\tCtrl + 0", 3008
+    MENUITEM SEPARATOR
+    MENUITEM "上一个标签(&U)\tCtrl + Home", 3006
+    MENUITEM "下一个标签(&D)\tCtrl + End 或 Ctrl + Tab", 3005
+    POPUP "激活来源窗口指定标签(&S)"
+        MENUITEM "激活第一个标签(&1)", 5001
+        MENUITEM "激活第二个标签(&2)", 5002
+        MENUITEM "激活第三个标签(&3)", 5003
+        MENUITEM "激活第四个标签(&4)", 5004
+        MENUITEM "激活第五个标签(&5)", 5005
+        MENUITEM "激活第六个标签(&6)", 5006
+        MENUITEM "激活第七个标签(&7)", 5007
+        MENUITEM "激活第八个标签(&8)", 5008
+        MENUITEM "激活第九个标签(&9)", 5009
+    END_POPUP
+    POPUP "激活目标窗口指定标签(&A)"
+        MENUITEM "激活第一个标签(&1)", 5101
+        MENUITEM "激活第二个标签(&2)", 5102
+        MENUITEM "激活第三个标签(&3)", 5103
+        MENUITEM "激活第四个标签(&4)", 5104
+        MENUITEM "激活第五个标签(&5)", 5105
+        MENUITEM "激活第六个标签(&6)", 5106
+        MENUITEM "激活第七个标签(&7)", 5107
+        MENUITEM "激活第八个标签(&8)", 5108
+        MENUITEM "激活第九个标签(&9)", 5109
+    END_POPUP
+    MENUITEM SEPARATOR
+    MENUITEM "显示/隐藏文件夹标签(&H)\tAlt + ↑", 2916
+    MENUITEM "显示标签右键菜单(&M)", 3009
+    MENUITEM SEPARATOR
+    MENUITEM "转到锁定标签的根目录(&R)\tCtrl + \", 3011
+    MENUITEM "设置文件夹标签(&E)...", 488
+END_POPUP
+
+POPUP "命令(&M)"
+    MENUITEM "更改文件夹(&T)...\tAlt+F10", 500
+    MENUITEM "搜索文件(&S)...\tCtrl + F 或 Alt + F7", 501
+    MENUITEM "设置卷标(&V)...", 505
+    MENUITEM "系统信息(&I)...", 506
+    MENUITEM "比较文件内容(&C)...\tF10", 2022
+    MENUITEM "批量重命名(&M)...\tCtrl + M", 2400
+    MENUITEM "计算占用空间(&O)...\tCtrl + L", 503
+    MENUITEM SEPARATOR
+    MENUITEM "比较文件夹(&P)\tShift + F2", 533
+    MENUITEM "同步文件夹(&Y)...\tShift + F12", 2020
+    MENUITEM "常用文件夹(&H)\tCtrl+D", 526
+    MENUITEM "展开所有文件夹(&A)\tCtrl+B", 2026
+    MENUITEM "打开桌面文件夹(&D)", 2121
+    MENUITEM SEPARATOR
+    MENUITEM "后台传输管理器(&B)...", 559
+    MENUITEM "打开命令行提示符窗口(&N)...\tCtrl + G", 511
+    MENUITEM "浏览内部命令(&W)...", 2924
+    MENUITEM "卸载所有插件(&U)", 2913
+    MENUITEM "以其他用户身份运行(&R)...", 2800
+    MENUITEM SEPARATOR
+    POPUP "窗口管理(&G)"
+        MENUITEM "最大化窗口(&X)", 2015
+        MENUITEM "最小化窗口(&Z)\tShift + Esc", 2000
+        MENUITEM "恢复窗口(&S)", 2016
+        MENUITEM "关闭窗口(退出)(&Q)\tAlt + F4", 24340
+    END_POPUP
+    POPUP "命令行(&L)"
+        MENUITEM "复制路径到命令行(&C)\tCtrl + P", 2019
+        MENUITEM "上一命令行(&U)\tCtrl + Up", 2006
+        MENUITEM "下一命令行(&N)\tCtrl + Down", 2005
+        MENUITEM "清除命令行(&C)\tESC", 2004
+        MENUITEM "聚焦到命令行(&F)\tShift + Right", 4003
+        MENUITEM "显示/隐藏命令行(&S)", 2910
+    END_POPUP
+    POPUP "NTFS 操作(&F)"
+        MENUITEM "权限设置(&P)...", 2200
+        MENUITEM "文件审核(&A)...", 2201
+        MENUITEM "获取所有权(&G)", 2202
+    END_POPUP
+END_POPUP
+
+POPUP "选择(&L)"
+    MENUITEM "选择一组文件(夹)(&G)...\t+", 521
+    MENUITEM "取消选择一组文件(夹)(&U)...\t-", 522
+    MENUITEM "反转选择一组文件(夹)(&R)\t*", 525
+    MENUITEM "全部选定：文件(夹)(&A)", 523
+    MENUITEM "取消选择：文件及文件夹(&N)\tCtrl + N", 524
+    MENUITEM "恢复上次选择(&L)\t/", 529
+    MENUITEM "保存当前选择(&V)\tCtrl + /", 530
+    MENUITEM SEPARATOR
+    POPUP "细分选择(&S)"
+        MENUITEM "选择一组: 文件及文件夹", 3311
+        MENUITEM "选择一组: 仅文件", 3312
+        MENUITEM "选择一组: 仅文件夹", 3313
+        MENUITEM "取消一组: 仅文件", 3314
+        MENUITEM "取消一组: 仅文件夹", 3315
+        MENUITEM "取消一组: 根据设置方案", 3316
+        MENUITEM SEPARATOR
+        MENUITEM "选定全部文件及文件夹\tCtrl + A", 3301
+        MENUITEM "选定全部文件\tCtrl + +", 3302
+        MENUITEM "选定全部文件夹\tShift + +", 3303
+        MENUITEM "取消选择全部文件\tCtrl + -", 3304
+        MENUITEM "取消选择全部文件夹\tShift + -", 3305
+        MENUITEM "取消选择全部文件及文件夹", 3306
+        MENUITEM "反转选择文件", 3322
+        MENUITEM "反转选择：文件夹", 3323
+        MENUITEM SEPARATOR
+        MENUITEM "选定相同扩展名的文件\tAlt + + 或 F11", 527
+        MENUITEM "取消选定相同扩展名的文件\tAlt + -", 528
+        MENUITEM SEPARATOR
+        MENUITEM "选定相同文件名的文件", 541
+        MENUITEM "取消选定相同文件名的文件", 542
+        MENUITEM SEPARATOR
+        MENUITEM "选定文件名及扩展名相同的文件", 543
+        MENUITEM "取消选择文件名及扩展名相同的文件", 544
+        MENUITEM SEPARATOR
+        MENUITEM "选定具有相同路径的文件\tAlt + *", 537
+        MENUITEM "取消选定具有相同路径的文件\tAlt + /", 538
+    END_POPUP
+    MENUITEM SEPARATOR
+    MENUITEM "导出选择文件列表(当前窗口或标签中的)(&E)...", 2031
+    MENUITEM "导出详细资料(&X)", 2039
+    MENUITEM "导入选择文件列表(从列表文件)(&I)...", 2032
+    MENUITEM "导入选择文件列表(从剪贴板中)(&M)", 2033
+END_POPUP
+
+POPUP "网络(&N)"
+    MENUITEM "网上邻居(&L)\tCtrl + J [+]", 2125
+    MENUITEM "映射网络驱动器(&N)...", 512
+    MENUITEM "断开网络驱动器(&D)...", 513
+    MENUITEM SEPARATOR
+    MENUITEM "共享当前文件夹(&C)...", 514
+    MENUITEM "取消文件夹共享(&U)...", 515
+    MENUITEM SEPARATOR
+    MENUITEM "显示远程用户(&R)", 2203
+    MENUITEM "显示管理员共享(&A)", 2204
+    MENUITEM SEPARATOR
+    MENUITEM "设置 FTP(&S)", 489
+    MENUITEM "连接到 FTP(&F)... \tCtrl + 7", 550
+    MENUITEM "新建 FTP 连接(&P)...", 551
+    MENUITEM "断开 FTP 连接(&E)\tShift + Ctrl + 7/F", 552
+    MENUITEM "显示 FTP 中的隐藏文件(&W)", 553
+    MENUITEM "中断当前 FTP 命令(&B)", 554
+    MENUITEM "恢复中断的下载(&B)", 555
+    MENUITEM "选择二进制、ASCII 或自动模式(&M)\tShift + Ctrl + M", 556
+    MENUITEM "将选定文件添加到下载列表(&I)...", 557
+    MENUITEM "下载位于下载列表中的文件(&O)...", 558
+    MENUITEM SEPARATOR
+    MENUITEM "后台传输管理器(&G)...\tShift + F9", 559
+    MENUITEM SEPARATOR
+    MENUITEM "直接电缆连接(&T)...", 2300
+    MENUITEM "加载并口驱动程序(NT)", 2301
+    MENUITEM "卸载并口驱动程序(NT)", 2302
+END_POPUP
+
+POPUP "设置(&O)"
+    MENUITEM "选项(&O)...", 490
+    MENUITEM SEPARATOR
+    MENUITEM "自定义工具栏(&T)...\tAlt + F12", 498
+    MENUITEM "自定义开始菜单(&S)...", 700
+    MENUITEM SEPARATOR
+    MENUITEM "更改语言/主菜单(&M)...", 499
+    MENUITEM "直接修改设置文件(&C)", 581
+    MENUITEM SEPARATOR
+    MENUITEM "保存窗口位置(&P)", 493
+    MENUITEM "保存选项设置(&V)", 580
+    MENUITEM "保存文件夹历史(&H)", 582
+    MENUITEM SEPARATOR
+    MENUITEM "设置 - 操作 (右键/选择)", 516
+    MENUITEM "设置 - 显示 (排序/提示)", 486
+    MENUITEM SEPARATOR
+    MENUITEM "设置 - 快速搜索", 479
+    MENUITEM "设置 - 确认/快捷键", 495
+    MENUITEM SEPARATOR
+    POPUP "其他设置(&R)"
+        MENUITEM "设置 - 颜色", 494
+        MENUITEM "设置 - 字体", 492
+        MENUITEM "设置 - 自定义列", 483
+        MENUITEM "设置 - 文件夹标签", 488
+        MENUITEM "设置 - 图标 (关联/大小)", 477
+        MENUITEM "设置 - 对齐方式 (大小单位)", 497
+        MENUITEM SEPARATOR
+        MENUITEM "设置 - 查看/编辑", 496
+        MENUITEM "设置 - 复制/删除", 487
+        MENUITEM SEPARATOR
+        MENUITEM "设置 - 刷新", 478
+        MENUITEM "设置 - FTP", 489
+        MENUITEM "设置 - 插件", 484
+        MENUITEM "设置 - 缩略图", 482
+        MENUITEM "设置 - 日志文件", 481
+        MENUITEM "设置 - 忽略列表", 480
+        MENUITEM SEPARATOR
+        MENUITEM "设置 - 压缩程序", 491
+        MENUITEM "设置 - ZIP 压缩程序", 485
+        MENUITEM SEPARATOR
+        MENUITEM "不载入所有插件", 2913
+    END_POPUP
+END_POPUP
+
+STARTMENU
+
+HELP_BREAK
+
+POPUP "系统资源(&W)"
+    POPUP "应用程序(&P)"
+        MENUITEM "资源管理器", em_explorer
+        MENUITEM "计算器", em_calc
+        MENUITEM "记事本", em_notepad
+        MENUITEM "写字板", em_write
+        MENUITEM "画图", em_mspaint
+        MENUITEM "媒体播放器", em_wmplayer
+        MENUITEM "DVD 播放器", em_dvdplay
+        MENUITEM "DirectX 诊断工具", em_dxdiag
+    END_POPUP
+    POPUP "控制面板(&C)"
+        MENUITEM "添加或删除程序", em_appwiz
+        MENUITEM "添加硬件向导", em_hdwwiz
+        POPUP "管理工具"
+            MENUITEM "管理工具", em_admintools
+            MENUITEM "证书管理", em_certmgr
+            MENUITEM "组件服务", em_comexp
+            MENUITEM "计算机管理", em_compmgmt
+            MENUITEM "设备管理器", em_devmgmt
+            MENUITEM "事件查看器", em_eventvwrb
+            MENUITEM "本地用户和组", em_lusrmgr
+            MENUITEM "数据源 (ODBC)", em_odbcad32b
+            MENUITEM "性能", em_perfmonb
+            MENUITEM "服务", em_services
+            MENUITEM "共享文件夹", em_fsmgmt
+        END_POPUP
+        MENUITEM "自动更新", em_wuaucpl
+        MENUITEM "时间和日期", em_datetime
+        MENUITEM "显示属性", em_desktop
+        MENUITEM "文件夹选项", em_folders
+        MENUITEM "字体", em_fonts
+        MENUITEM "游戏控制器", em_joy
+        MENUITEM "Internet 属性", em_inetcpl
+        MENUITEM "鼠标选项", em_mouse
+        MENUITEM "网络连接", em_netconnections
+        MENUITEM "网络设置向导", em_netsetup
+        MENUITEM "电话和调制解调器选项", em_telephony
+        MENUITEM "电源选项", em_powercfg
+        MENUITEM "打印机和传真", em_printers
+        MENUITEM "区域和语言选项", em_international
+        MENUITEM "扫描仪和照相机", em_scannercamera
+        MENUITEM "计划任务", em_schedtasks
+        MENUITEM "声音和音频设备", em_mmsys
+        MENUITEM "系统属性", em_sysdm
+        MENUITEM "任务栏和开始菜单", em_taskbar
+        MENUITEM "用户账户", em_userpasswords
+        MENUITEM "Windows 防火墙", em_firewall
+        MENUITEM "操作中心", em_wscui
+    END_POPUP
+    POPUP "系统工具(&S)"
+        MENUITEM "关于 Windows", em_winver
+        MENUITEM "控制面板", em_control
+        MENUITEM "创建共享文件夹向导", em_shrpubw
+        MENUITEM "磁盘清理", em_cleanmgr
+        MENUITEM "事件查看器", em_eventvwr
+        MENUITEM "ODBC 数据源管理器", em_odbcad32a
+        MENUITEM "性能管理器", em_perfmon
+        MENUITEM "注册表编辑器", em_regedit
+        MENUITEM "SQL客户端网络工具", em_cliconfg
+        MENUITEM "系统配置工具", em_msconfig
+        MENUITEM "任务管理器", em_taskmgr
+    END_POPUP
+    POPUP "通信(&O)"
+        MENUITEM "网络连接", em_ncpa
+        MENUITEM "远程桌面连接", em_mstsc
+        MENUITEM "远程访问电话簿", em_rasphone        
+    END_POPUP
+    MENUITEM SEPARATOR
+    MENUITEM "默认工具栏(&D)", em_defaultbar
+    MENUITEM "系统资源工具栏(&W)", em_sysappbar
+    MENUITEM "控制面板工具栏(&N)", em_cpbar
+    MENUITEM "内部命令工具栏(&I)", em_intercmdbar
+    MENUITEM "移除工具栏(&R)(临时)", em_removebar
+END_POPUP
+
+POPUP "快捷键(&K)"
+    POPUP "功能键\tFx"
+        MENUITEM "帮助索引\tF1", 610
+        MENUITEM "仅重命名 (不移动)\tF2 [*] 或 Shift + F6", 1002
+        MENUITEM SEPARATOR
+        MENUITEM "查看文件 (使用 Lister)\tF3", 903
+        MENUITEM "编辑文件 (使用编辑器)\tF4", 904
+        MENUITEM "复制文件(夹)\tF5", 905
+        MENUITEM "重命名/移动文件(夹)\tF6", 906
+        MENUITEM "新建文件夹\tF7", 907
+        MENUITEM "删除文件(夹)\tF8 或 Del", 908
+        MENUITEM SEPARATOR
+        MENUITEM "复制文件名\tF9 [*] 或 Ctrl + 2 [s]", 2017
+        MENUITEM "比较文件内容...\tF10 [*]", 2022
+        MENUITEM "全部选定 (扩展名相同的文件)\tF11 [+] 或 Alt + +", 527
+        MENUITEM "复制文件名 (含完整路径)\tF12 [+] 或 Ctrl + 3 [s]", 2018
+    END_POPUP
+    MENUITEM SEPARATOR
+    POPUP "Alt +\tFx"
+        MENUITEM "更改左窗口的驱动器\tAlt + F1", 131
+        MENUITEM "更改右窗口的驱动器\tAlt + F2", 231
+        MENUITEM SEPARATOR
+        MENUITEM "退出\tAlt + F4", 24340
+        MENUITEM SEPARATOR
+        MENUITEM "压缩文件(夹)...\tAlt + F5", 508
+        MENUITEM "测试压缩包 (可多个)\tAlt + F6 [*]", 518
+        MENUITEM "搜索文件(夹)...\tAlt + F7 或 Ctrl + F [*]", 501
+        MENUITEM "解开压缩包 (可多个)...\tAlt + F9", 509
+        MENUITEM SEPARATOR
+        MENUITEM "文件夹树...\tAlt + F10", 500
+        MENUITEM "打开驱动器列表\tAlt + F11 [+]", 331
+        MENUITEM "自定义工具栏...\tAlt + F12 [+]", 498
+    END_POPUP
+    POPUP "Ctrl +\tFx"
+        MENUITEM "列表\tCtrl + F1", 301
+        MENUITEM "详细资料\tCtrl + F2", 302
+        MENUITEM "名称\tCtrl + F3", 321
+        MENUITEM "扩展名\tCtrl + F4", 322
+        MENUITEM "日期\tCtrl + F5", 324
+        MENUITEM "大小\tCtrl + F6", 323
+        MENUITEM "不排序\tCtrl + F7", 325
+        MENUITEM "树式窗口\tCtrl + F8", 303
+        MENUITEM SEPARATOR
+        MENUITEM "打印文件内容\tCtrl + F9", 504
+        MENUITEM SEPARATOR
+        MENUITEM "所有文件\tCtrl + F10", 312
+        MENUITEM "可执行文件\tCtrl + F11", 311
+        MENUITEM "自定义类型...\tCtrl + F12", 314
+    END_POPUP
+    POPUP "Shift +\tFx"
+        MENUITEM "选择自定义列类型\tShift + F1", 270
+        MENUITEM SEPARATOR
+        MENUITEM "比较文件夹\tShift + F2", 533
+        MENUITEM "另存到当前文件夹中...\tShift + F5", 3100
+        MENUITEM "仅重命名 (不移动)\tShift + F6 或 F2 [*]", 1002
+        MENUITEM SEPARATOR
+        MENUITEM "反向排序\tShift + F7 [+]", 330
+        MENUITEM "直接删除/删除到回收站(视设置而定)\Shift + F8 或Shift + DEL", 908
+        MENUITEM "后台传送管理器...\tShift + F9 [+]", 559
+        MENUITEM "显示右键菜单\tShift + F10", 2500
+        MENUITEM SEPARATOR
+        MENUITEM "比较文件夹 (标出没有的子文件夹)\tShift + F11 [+]", 536
+        MENUITEM "同步文件夹...\tShift + F12 [s]", 2020
+    END_POPUP
+    MENUITEM SEPARATOR
+    POPUP "Alt +\t数字"
+        MENUITEM "选项...\tAlt + 0 [+]", 490
+        MENUITEM SEPARATOR
+        MENUITEM "显示/隐藏  两个驱动器按钮栏\tAlt + 1 [+]", 2903
+        MENUITEM "显示/隐藏  工具栏\tAlt + 2 [+]", 2901
+        MENUITEM "显示/隐藏  功能键按钮\tAlt + 3 [+]", 2911
+        MENUITEM SEPARATOR
+        MENUITEM "缩略图\tAlt + 4 [+]", 269
+        MENUITEM "平分窗口\tAlt + 5 [+]", 909
+        MENUITEM "横向/纵向  平铺窗口\tAlt + 6 [+]", 305
+        MENUITEM SEPARATOR
+        MENUITEM "交换左右窗口 (及所有标签)\tAlt + 7 [+]", 535
+        MENUITEM "目标 ＝ 来源  (仅当前标签)\tAlt + 8 [+]", 532
+        MENUITEM SEPARATOR
+        MENUITEM "文件注释\tAlt + 9 [+]", 300
+    END_POPUP
+    POPUP "Ctrl +\t数字"
+        MENUITEM "关闭所有标签 (非活动和未锁定的)\tCtrl + 0 [+]", 3008
+        MENUITEM SEPARATOR
+        MENUITEM "复制来源路径\tCtrl + 1 [s]", 2029
+        MENUITEM "复制文件名\tCtrl + 2 [s] 或 F9 [*]", 2017
+        MENUITEM "复制文件名 (含完整路径)\tCtrl + 3 [s] 或 F12 [+]", 2018
+        MENUITEM "复制文件名 (含网络路径)(UNC)\tCtrl + 4 [s]", 2021
+        MENUITEM SEPARATOR
+        MENUITEM "创建 CRC 校验和文件 (MD5/SFV)...\tCtrl + 5 [+]", 564
+        MENUITEM "检查选定文件的 CRC 校验和 (MD5/SFV)\tCtrl + 6 [+]", 565
+        MENUITEM SEPARATOR
+        MENUITEM "连接到 FTP...\tCtrl + 7 [+]", 550
+        MENUITEM "显示标签 (右键) 菜单\tCtrl + 8 [+]", 3009
+    END_POPUP
+    MENUITEM SEPARATOR
+    POPUP "Alt +\t字母"
+        MENUITEM "更改属性/日期...\tAlt + C [s]", 502
+    END_POPUP
+    POPUP "Ctrl +\t字母"
+        MENUITEM "全部选定\tCtrl + A 或 Ctrl + +", 523
+        MENUITEM "显示所有文件 (当前文件夹及其下层)\tCtrl + B", 2026
+        MENUITEM "复制选定文件到剪贴板\tCtrl + C", 2008
+        MENUITEM "常用文件夹列表\tCtrl + D", 526
+        MENUITEM "查看 (使用 Lister，但不用插件)\tCtrl + E [+]", 526
+        MENUITEM "搜索文件(夹)...\tCtrl + F [*] 或 Alt + F7", 501
+        MENUITEM "运行 &DOS\tCtrl + G [s]", 511
+        MENUITEM SEPARATOR
+        MENUITEM "显示/隐藏  系统/隐藏文件\tCtrl + H [s]", 2011
+        MENUITEM "创建快捷方式...\tCtrl + I [*]", 1004
+        MENUITEM "网上邻居\tCtrl + J [+]", 2125
+        MENUITEM "锁定/解锁当前标签 (允许更改文件夹)\tCtrl + K [+]", 3012
+        MENUITEM "计算占用空间 \tCtrl + L", 503
+        MENUITEM "批量重命名文件...\tCtrl + M 或 F1 [*]", 2400
+        MENUITEM "新建 FTP 连接...\tCtrl + N", 551
+        MENUITEM SEPARATOR
+        MENUITEM "刷新选定的缩略图\tCtrl + O [+]", 2918
+        MENUITEM "复制路径到命令行\tCtrl + P", 2019
+        MENUITEM "快速查看\tCtrl + Q", 304
+        MENUITEM "刷新来源窗口\tCtrl + R", 540
+        MENUITEM "显示快速搜索框\tCtrl + S ", 2915
+        MENUITEM "复制当前标签 (并打开)\tCtrl + T", 3001
+        MENUITEM SEPARATOR
+        MENUITEM "交换左右窗口 (仅当前标签)\tCtrl + U", 531
+        MENUITEM "从剪贴板粘贴到当前文件夹\tCtrl + V", 2009
+        MENUITEM "关闭当前标签\tCtrl + W", 3007
+        MENUITEM "剪切选定文件到剪贴板\tCtrl + X", 2007
+        MENUITEM "桌面\tCtrl + Y [+]", 2121
+        MENUITEM "编辑文件注释...\tCtrl + Z", 2700
+    END_POPUP
+    MENUITEM SEPARATOR
+    POPUP "Alt +\t其他"
+        MENUITEM "显示/隐藏  文件夹标签\tAlt + ↑ [+]", 2916
+        MENUITEM "历史文件夹列表\tAlt + ↓", 572
+        MENUITEM "后退\tAlt + ←", 570
+        MENUITEM "前进\tAlt + →", 571
+        MENUITEM SEPARATOR
+        MENUITEM "全部选定 (扩展名相同的文件)\tAlt + + 或 F11 [+]", 527
+        MENUITEM "全都不选 (扩展名相同的文件)\tAlt + -", 528
+        MENUITEM SEPARATOR
+        MENUITEM "文件属性...\tAlt + 回车", 510
+        MENUITEM SEPARATOR
+        MENUITEM "激活第一个标签 (来源窗口)\tAlt + Home [+]", 5001
+        MENUITEM "激活第一个标签 (目标窗口)\tAlt + End [+]", 5101
+    END_POPUP
+    POPUP "Ctrl +\t其他"
+        MENUITEM "全部选定\tCtrl + + 或 Ctrl + A", 523
+        MENUITEM "全都不选\tCtrl + -", 524
+        MENUITEM SEPARATOR
+        MENUITEM "锁定/解锁当前标签\tCtrl + * [+]", 3010
+        MENUITEM "记住当前选择\tCtrl + / [s]", 530
+        MENUITEM SEPARATOR
+        MENUITEM "转到锁定标签的基础文件夹\tCtrl + \", 3011
+        MENUITEM "转到根文件夹\tCtrl + \", 2001
+        MENUITEM "转到上层文件夹\tCtrl + PgUp 或 退格", 2002
+        MENUITEM "打开文件夹或压缩包 (光标下的)\tCtrl + PgDn", 2003
+        MENUITEM SEPARATOR
+        MENUITEM "下一个标签\tCtrl + Tab 或 Ctrl + End [+]", 3005
+        MENUITEM "新建标签 (并打开光标下的文件夹)\tCtrl + ↑", 3003
+        MENUITEM "新建标签 (并打开光标下的文件夹)(在另一窗口)\tCtrl + ↓ [+]", 3004
+        MENUITEM SEPARATOR
+        MENUITEM "打开文件夹或压缩包 (到左窗口)\tCtrl + ←", 2024
+        MENUITEM "打开文件夹或压缩包 (到右窗口)\tCtrl + →", 2025
+        MENUITEM SEPARATOR
+        MENUITEM "上一个标签\tCtrl + Home [+]", 3006
+        MENUITEM "下一个标签\tCtrl + End [+] 或 Ctrl + Tab", 3005
+    END_POPUP
+    POPUP "Shift +\t其他"
+        MENUITEM "隐藏未选文件\tShift + - [+]", 2023
+        MENUITEM "比较文件夹 (标出新文件，隐藏相同者)\tShift + * [+]", 534
+        MENUITEM "最小化 Total Commander\tShift + Esc", 2000
+    END_POPUP
+    MENUITEM SEPARATOR
+    POPUP "其他快捷键"
+        MENUITEM "删除\tDel 或 F8", 908
+        MENUITEM "打开文件夹或压缩包\t回车", 2003
+        MENUITEM "转到上层文件夹\t退格 或 Ctrl + PgUp", 2002
+        MENUITEM "激活命令行\t← 或 →", 4003
+        MENUITEM SEPARATOR
+        MENUITEM "增加选择文件...\t+", 521
+        MENUITEM "减少选择文件...\t-", 522
+        MENUITEM "反转当前选择\t*", 525
+        MENUITEM "恢复上次选择\t/", 529
+    END_POPUP
+    POPUP "三键快捷键"
+        MENUITEM "查看 (使用 Lister，但不用插件)\tShift + Alt + F3 或 Ctrl + E [+]", 1006
+        MENUITEM "测试压缩包 (可多个)\tShift + Alt + F9 或 Alt + F6 [*]", 518
+        MENUITEM "计算占用空间 (所有文件夹)\tShift + Alt + 回车 或 Alt + L [+]", 2014
+        MENUITEM SEPARATOR
+        MENUITEM "缩略图\tShift + Ctrl + F1 或 Alt + 4 [+]", 269
+        MENUITEM "文件注释\tShift + Ctrl + F2 或 Alt + 9 [+]", 300
+        MENUITEM SEPARATOR
+        MENUITEM "创建快捷方式...\tShift + Ctrl + F5 或 Ctrl + I [*]", 1004
+        MENUITEM "断开 FTP 连接\tShift + Ctrl + F 或 Shift + Ctrl + 7 [+]", 552
+        MENUITEM "选择二进制、ASCII 或自动模式\tShift + Ctrl + M", 556
+        MENUITEM SEPARATOR
+        MENUITEM "显示选中文件(夹)及其下层文件夹中所有文件\tShift + Ctrl + B", 2046
+        MENUITEM "复制当前标签 (在后台)\tShift + Ctrl + T", 3002
+        MENUITEM "交换左右窗口 (及所有标签)\tShift + Ctrl + U 或 Alt + 7 [+]", 535
+        MENUITEM "关闭所有标签 (非活动和未锁定的)\tShift + Ctrl + W 或 Ctrl + 0 [+]", 3008
+        MENUITEM "新建标签 (并打开光标下的文件夹)(在另一窗口)\tShift + Ctrl + ↑ 或 Ctrl + ↓ [+]", 3004
+        MENUITEM "上一个标签\tShift + Ctrl + Tab 或 Ctrl + Home [+]", 3006
+    END_POPUP
+    MENUITEM SEPARATOR
+    POPUP "有键无命令"
+        MENUITEM "切换内外查看器\tAlt + F3", 2002
+        MENUITEM "打开命令行的历史记录\tAlt + F8", 2002
+        MENUITEM "仅查看当前光标下的文件（在选定多个文件时）\tShift + F3", 2002
+        MENUITEM "使用外部编辑器创建新文件\tShift + F4", 2002
+        MENUITEM "直接删除（不送到回收站）\tShift + F8/Del", 2002
+        MENUITEM SEPARATOR
+        MENUITEM "切换压缩包操作方式\tShift + 回车", 2002
+        MENUITEM "压缩到当前文件夹中...\tCtrl + Alt + F5 [s]", 2002
+        MENUITEM "移动到压缩包中...\tShift + Alt + F5", 2002
+        MENUITEM "压缩并移动到压缩包中...\tShift + Ctrl + Alt + F5 [+]", 2002
+        MENUITEM SEPARATOR
+        MENUITEM "选择文件(夹)/计算文件夹大小\t空格 (Space)", 2002
+        MENUITEM "选择文件(夹)\t插入 (Insert)", 2002
+        MENUITEM "切换左/右活动窗口\tTab", 2002
+        MENUITEM SEPARATOR
+        MENUITEM "向上选择\tShift + ↑", 2002
+        MENUITEM "向下选择\tShift + ↓", 2002
+        MENUITEM SEPARATOR
+        MENUITEM "选择到顶部\tShift + Home", 2002
+        MENUITEM "选择到底部\tShift + End", 2002
+        MENUITEM SEPARATOR
+        MENUITEM "选择到上一页\tShift + PgUp", 2002
+        MENUITEM "选择到下一页\tShift + PgDn", 2002
+    END_POPUP
+    POPUP "快捷键说明"
+        MENUITEM "快捷键中的 + - * / 都是数字键盘上的", 2002
+        MENUITEM SEPARATOR
+        MENUITEM "有键无命令，是指快捷键起作用，但是在内部", 2002
+        MENUITEM "命令文件中，却没有与之相对应的命令。如果", 2002
+        MENUITEM "单击本菜单中的某个命令，也只会执行“转到", 2002
+        MENUITEM "上层文件夹”命令，无任何毒副作用 :)", 2002
+        MENUITEM SEPARATOR
+        MENUITEM "快捷键后带有 [s]，表示出自 Shanny 的版本", 2002
+        MENUITEM "快捷键后带有 [+]，表示是本版本新增快捷键", 2002
+        MENUITEM "快捷键后带有 [*]，表示是更改功能的快捷键", 2002
+        MENUITEM SEPARATOR
+        MENUITEM "几个按键的中英文对照，仅供参考 :)", 2002
+        MENUITEM "空格 (Space)，退格 (BackSpace)", 2002
+        MENUITEM "回车 (Enter)，插入 (Insert)", 2002
+    END_POPUP
+END_POPUP
+
+POPUP "帮助(&H)"
+    MENUITEM "帮助索引(&I)", 610
+    MENUITEM "快捷键列表(&K)", 620
+    MENUITEM "注册信息(&R)", 630
+    MENUITEM "关于 Total Commander...(&A)", 690
+    MENUITEM SEPARATOR
+    MENUITEM "访问官方网站(&W)", 640
+    MENUITEM "访问官方论坛(&F)", em_help_forum
+    MENUITEM "访问官方网站插件页面(&O)", em_help_plugins
+    MENUITEM "访问 TotalCmd.net 插件网站(&N)", em_help_totalcmd.net
+    MENUITEM "查看主设置文件(&V)", em_commanderini
+    MENUITEM "查看用户设置文件(&U)", em_userini
+    MENUITEM SEPARATOR
+    MENUITEM "访问 飞扬时空(&S)", em_help_flyon
+END_POPUP
